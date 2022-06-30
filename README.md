@@ -8,17 +8,19 @@ homeassistant 의 지도를 한국지도로 변경
 
 1. 컨테이너명 찾기
 
-​```shell
+```shell
 $ docker ps --format "table {{.Image}}\t{{.Names}}" | grep home-assistant            
 ghcr.io/home-assistant/home-assistant:stable          homeassistant
 ```
 
 여기서 컨테이너명은 homeassistant.
 
+
 2. 컨테이너 진입
 ```shell
 $ docker exec -it homeassistant bash
 ```
+
 
 3. 커맨드 수행
 ```shell
