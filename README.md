@@ -24,7 +24,7 @@ $ docker exec -it homeassistant bash
 
 3. 커맨드 수행
 ```shell
-$ wget -O - https://raw.githubusercontent.com/nimusis/ha_map_patch/main/ha_map_patch.sh | bash 
+$ bash -c "$(wget -O - 'https://raw.githubusercontent.com/nimusis/ha_map_patch/main/ha_map_patch.sh')" 
 ```
 
 ## 도커 외의 시스템
@@ -33,6 +33,6 @@ $ wget -O - https://raw.githubusercontent.com/nimusis/ha_map_patch/main/ha_map_p
 
 
 ```shell
-$ wget -O - https://raw.githubusercontent.com/nimusis/ha_map_patch/main/ha_map_patch.sh | bash 
+$ bash -c "$(wget -O - 'https://raw.githubusercontent.com/nimusis/ha_map_patch/main/ha_map_patch.sh')" 
 ```
 
